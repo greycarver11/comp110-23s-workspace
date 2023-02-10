@@ -1,5 +1,5 @@
 """EX02 - One-Shot Wordle - Loops!"""
-__author__ = 730394136
+__author__ = "730394136"
 
 SECRET: str = "python"
 guess: str = input("What is your 6-letter guess? ")
@@ -20,23 +20,22 @@ while playing and idx < len(SECRET):
     else:
         yellow_letter: bool = False
         idx_2: int = 0
-        while yellow_letter != True and idx_2 < len(SECRET):
+        while yellow_letter is not True and idx_2 < len(SECRET):
             if SECRET[idx] == guess[idx_2]:
                 yellow_letter = True
             else:
                 idx_2 = idx_2 + 1
-        if yellow_letter == True:
+        if yellow_letter is True:
             emoji = emoji + YELLOW_BOX
-        if yellow_letter == False:
+        if yellow_letter is False:
             emoji = emoji + WHITE_BOX 
     idx = idx + 1 
 
 if guess != SECRET:
-    print (emoji)
+    print(emoji)
     print("Not quite. Play again soon")
     playing = False
 if guess == SECRET: 
-    print (emoji)
+    print(emoji)
     print("Woo! You got it!")
     playing = False
-
