@@ -20,8 +20,8 @@ while playing and idx < len(SECRET):
     else:
         yellow_letter: bool = False
         idx_2: int = 0
-        while yellow_letter is not True and idx_2 < len(SECRET):
-            if SECRET[idx] == guess[idx_2]:
+        while yellow_letter is False and idx_2 < len(SECRET):
+            if SECRET[idx_2] == guess[idx]:
                 yellow_letter = True
             else:
                 idx_2 = idx_2 + 1
