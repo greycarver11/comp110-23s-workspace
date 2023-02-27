@@ -30,8 +30,10 @@ def max(input: list[int]) -> int:
 def is_equal(one: list[int], two: list[int]) -> bool:
     """Returns True when two lists equal each other."""
     idx: int = 0
-    if len(one) == 0 or len(two) == 0:
+    if len(one) != len(two):
         return False
+    if len(one) == 0 and len(two) == 0:
+        return True
     while idx < len(one) and idx < len(two):
         if one[idx] != two[idx]:
             return False
