@@ -1,5 +1,4 @@
 """Ex04 - 'list' Utility Functions"""
-
 __author__ = "730394136"
 
 
@@ -31,9 +30,10 @@ def max(input: list[int]) -> int:
 def is_equal(one: list[int], two: list[int]) -> bool:
     """Returns True when two lists equal each other."""
     idx: int = 0
+    if len(one) == 0 or len(two) == 0:
+        return False
     while idx < len(one) and idx < len(two):
         if one[idx] != two[idx]:
             return False
         idx += 1
     return True
-
