@@ -1,4 +1,4 @@
-"""Ex04 - 'list' Utility Functions"""
+"""Ex04 - 'list' Utility Functions."""
 __author__ = "730394136"
 
 
