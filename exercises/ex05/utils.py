@@ -1,6 +1,7 @@
 """EX05 - 'list' Utility Functions."""
 __author__ = "730394136"
 
+
 def only_evens(xs: list[int]) -> list[int]:
     """Returns even elements of input parameter."""
     number: list[int] = []
@@ -8,6 +9,7 @@ def only_evens(xs: list[int]) -> list[int]:
         if elem % 2 == 0:
             number.append(elem)
     return number
+
 
 def concat(xs: list[int], ys: list[int]) -> list[int]:
     """Returns list containing all elements of the first and second lists."""
@@ -17,6 +19,7 @@ def concat(xs: list[int], ys: list[int]) -> list[int]:
     for item in ys:
         number.append(item)
     return number
+
 
 def sub(xs: list[int], ys: int, zs: int) -> list[int]:
     """Returns list as subset of the given list in range."""
