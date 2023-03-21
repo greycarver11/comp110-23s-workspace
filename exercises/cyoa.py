@@ -23,14 +23,14 @@ def guess(xs: int) -> int:
     guessing: int = int(input("Guess a number between 1 and 10: "))
     while guessing != 6: 
         xs += 1
-        guessing = int(input(f"That was not correct! Try again: "))
+        guessing = int(input("That was not correct! Try again: "))
     print(f"Congrats, {player} you have {xs} points!")
     return xs
 
 
 def game(input_guess: int) -> None:
     """Game loop with hints."""
-    number: int = random.randint(1,10)
+    number: int = random.randint(1, 10)
     attempts: int = 4
     global points 
     global player
