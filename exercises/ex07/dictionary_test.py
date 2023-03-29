@@ -4,6 +4,7 @@ __author__ = "730394136"
 import pytest
 from exercises.ex07.dictionary import invert, favorite_color, count
 
+
 def test_invert_empty() -> None:
     """Tests if dict is empty; edge case."""
     assert invert({}) == {}
@@ -53,4 +54,4 @@ def test_count_one() -> None:
 def test_count_two() -> None:
     """Tests if list has two values; use case."""
     test_list: list[str] = ["hello", "goodbye"]
-    assert count(test_list)  == {'hello': 1, 'goodbye': 1}
+    assert count(test_list) == {'hello': 1, 'goodbye': 1}
